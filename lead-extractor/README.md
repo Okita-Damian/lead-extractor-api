@@ -155,7 +155,7 @@ lead-extractor/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/Okita-Damian/lead-extractor-api.git>
 cd lead-extractor
 ```
 
@@ -243,20 +243,6 @@ python -m pytest tests/test_api.py
 ```
 
 The LLM tests use mocked Groq responses, so they do not consume API quota or require internet access.
-
-## Run with Docker
-
-Build the image:
-
-```bash
-docker build -t lead-extractor .
-```
-
-Run the container:
-
-```bash
-docker run --env-file .env -p 8000:8000 lead-extractor
-```
 
 Then open:
 
